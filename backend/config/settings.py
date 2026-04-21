@@ -42,8 +42,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",
     "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -130,3 +130,10 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+# Replace with your actual Render and Netlify links
+ALLOWED_HOSTS = ['my-portfolio-using-react-and-django-1.onrender.com', 'localhost', '127.0.0.1']
+
+CORS_ALLOWED_ORIGINS = [
+    "https://eccomerceshopofmine.netlify.app",
+    "http://localhost:3000",
+]
