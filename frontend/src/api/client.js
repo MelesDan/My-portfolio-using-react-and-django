@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://my-portfolio-using-react-and-django-1.onrender.com";
 
 async function request(path, { method = "GET", token, body } = {}) {
   const headers = {
