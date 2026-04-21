@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || "https://my-portfolio-using-react-and-django-1.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL || "https://my-portfolio-using-react-and-django-1.onrender.com/api";
 
 async function request(path, { method = "GET", token, body } = {}) {
   const headers = {
